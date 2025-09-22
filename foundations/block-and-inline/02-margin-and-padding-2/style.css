@@ -5,37 +5,50 @@ body {
 
 div,
 h1 {
-  margin-bottom: 10px;
+  margin-bottom: 8px; /* I had 10px not 8px */
 }
 
 .card {
   width: 400px;
   background: #fff;
   margin: 16px auto;
-  padding: 10px;
+  padding: 8px; /* I had 10px not 8px */
 }
 
 .title {
   background: #e3f4ff;
-  padding: 10px;
+  padding: 8px; /* I had 10px not 8px */
   font-size: 16px;
 }
 
 .content {
   background: #e3f4ff;
-  padding: 11px;
+  padding: 16px 8px; 
+  /* 
+  I had 11px on all sides as I had not realized that the top differed
+  from the sides.
+  */
 }
 
 .button-container {
   background: #e3f4ff;
   text-align: center;
-  padding: 10px;
+  padding: 8px; /* I had 10px not 8px */
 }
 
 button {
   background: white;
   border: 1px solid #eee;
-  padding: 7px 20px;
+  padding: 8px 24px; 
+  /*
+  I had 7px on top and bottom instead of 8px and
+  20px on both sides instead of 24px.
+  */
   margin: auto;
   display: block;
 }
+
+/*
+Overall I think that it went pretty well. Now to check the solution
+and see how off I am.
+*/
