@@ -44,11 +44,20 @@ button {
   I had 7px on top and bottom instead of 8px and
   20px on both sides instead of 24px.
   */
-  margin: auto;
+  margin: 0 auto; /* I just had auto here. not the 0*/
   display: block;
 }
 
 /*
 Overall I think that it went pretty well. Now to check the solution
 and see how off I am.
+
+Well I think I did pretty well. 
+But instead of selecting both the div element and the h1 element they put 
+margin-bottom on the .title and the .content.
+
+I think they did that so that it is more specific than just selecting all
+divs and h1 elements. So I think that the way they did it makes more sense
+overall then the way I did it. But as what I have works I will leave it
+be. But for future reference I will do what they did.
 */
