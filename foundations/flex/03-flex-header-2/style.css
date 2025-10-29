@@ -12,9 +12,9 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
-  display: flex; /* added */
-  align-items: center; /* added */
-  padding: 8px; /* added */
+  display: flex;
+  align-items: center;
+  padding: 8px;
 }
 
 .profile-image {
@@ -40,7 +40,6 @@ button {
   padding: 8px 24px;
 }
 
-/* added */
 button.notifications {
   margin-left: auto;
   margin-right: 16px;
@@ -54,8 +53,17 @@ a {
 
 ul {
   list-style-type: none;
-  display: flex; /* added */
-  gap: 16px; /* added */
-  margin: 16px; /* added */
-  padding: 0px; /* added */
+  display: flex;
+  gap: 16px;
+  margin: 16px;
+  padding: 0px;
 }
+
+/* 
+While my way worked and I think fit the README self checks, I like the
+way they did it better. While I used auto margin on the notification button they put
+both the notification button and profile image in one flexbox and the logo and the
+ul in another flexbox with both of those boxes being an item of a flexbox.
+Which I think is a better idea the using auto margin because then it would be
+much easier to add other items onto the header menu.
+*/
