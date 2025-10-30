@@ -6,7 +6,6 @@ body {
 img {
   width: 100px;
   height: 100px;
-  margin-bottom: 5px;
 }
 
 .title {
@@ -22,11 +21,11 @@ img {
 }
 
 .plants {
-  display: flex;
+  /* display: flex; */
   width: 200px;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap;
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* flex-wrap: wrap; */
 }
 
 
