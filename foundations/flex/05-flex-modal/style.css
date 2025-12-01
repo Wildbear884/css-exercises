@@ -87,3 +87,9 @@ button.cancel {
   border: 1px solid #ddd;
   color: royalblue;
 }
+
+/* Their "container" div is my "content" div.
+I used one more div as I made a "header" div around the text and the close button and then a "header-text" div around the header text. Instead of just sticking the header text and the close button in the same "header" div.
+I think their way is better as their is one less div to create confusion. And if there is one less div it should make it easier to read.
+Their font-weight for the header is set to 700 instead of bold.
+Beyond that though I got it pretty good if I do say so myself. */
