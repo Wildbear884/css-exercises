@@ -70,3 +70,38 @@ li > a {
   display: flex;
   justify-content: center;
 }
+
+/*
+Things I did the same:
+	Set the body to flex and the flex direction to column.
+	Set padding on the button
+	Set the header and the footer to flex, justified the content to space between and added padding.
+	Set the content to flex, the flex direction to column, and the gap to 16px.
+	Set the <ul> style to none, the margin to 0px, and the padding to 0px.
+
+Things I did different:
+1. Set the body to justify its content to space between. 
+	(They set the content flex to 1) 
+	(I hadn't even thought of doing it that way, and I am not sure which way is better when they do the same pretty much the same thing in the same amount of lines.)
+
+2. Used margin to make a little space between the contents buttons.
+	(They set align-items: center on the content which lines the buttons up correctly and removes the need for margin on the buttons.)
+	(I think their way is better as it is less lines and less confusing to read.)
+
+3. Selected the <a> html tag that are children of <li>.
+	(They selected the <a> html tag)
+	(Other then how I selected the <a> html tag, I didn't do anything different. I think which way is better is based on what other links are used. But their way is the simpler way that works
+	while mine is unnecessarily complicated. Therefore theirs is better)
+
+4. Set the right and left links to flex with some gap on using .right-links, .left-links.
+	(They set the flex and the gap to the <ul> html tag.)
+	(Theirs takes less lines and is simpler to read. Therefor I think it is the better way for this use case.)
+	
+5. Aligned the content image using align-self: center.
+	(They aligned the entire content --buttons and input included-- using align-items: center and justify-content: center)
+	(There way is much better as mine over complicated it and takes more lines.)
+
+6. Aligned the input and buttons using justify-content: center.
+	(See 5)
+	(See 5 Their way is better)
+*/
