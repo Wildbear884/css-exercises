@@ -48,7 +48,6 @@ ul {
   box-sizing: border-box;
   flex-shrink: 0;
   padding: 16px;
-  display: flex;
 }
 
 .card {
@@ -56,8 +55,7 @@ ul {
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
   padding: 16px;
-  max-width: 300px;
-  min-width: 300px;
+  width: 300px;
 }
 
 .cards {
@@ -71,3 +69,49 @@ ul {
   display: flex;
   flex: 1;
 }
+
+/*
+Matching things:
+Set the body's display to flex.
+Set the body's flex-direction to column.
+Set the header's display to flex.
+Set the header's align-items to center.
+Set the header's font size to 32px.
+Set the header's font weight to 900.
+Set the "content"'s display to flex.
+Set the "content"'s flex to 1.
+Set the sidebar's padding to 16px.
+Set the sidebar's flex-shrink to 0.
+Set the li's margin-bottom to 16px.
+Set the a's color to white.
+Set the a's text-decoration to none.
+Set the a's font-size to 24px.
+Set the "cards" padding to 48px.
+Set the "cards" display to flex.
+Set the "cards" flex-wrap to wrap.
+Set the "cards" gap to 32px.
+Set the footer's display to flex.
+Set the footer's align-items to center.
+Set the footer's justify-content to center.
+
+
+Different things:
+They set the header's padding using "padding: 0 16px;" while I did "padding-left: 16px;"
+  They almost do the same thing, so IMO they are equal in terms are use.
+
+Their html class "body" is my html class "content"
+  This is a difference in naming. So IMO at this point it doesn't matter.
+
+They set the ul's margin and padding to 0, while I set it to 0px.
+  That is a very slight difference and IMO it doesn't matter.
+
+Their html class "container" is my html class "cards"
+  This is a difference in naming. So IMO at this point it doesn't matter.
+  
+They set the card's width to 300px. While I set the card's max and min width to 300px.
+  Functionally I see no difference. But IMO their way is better as setting both the max and the min width to the same number makes less sense then setting the width.
+
+Other notes and changes:
+While comparing solutions I realized that having `display: flex` set on the sidebar at line 51 was unneeded. So I removed it.
+I realized while comparing solutions I realized that having the max and min width of the card's set the same is a stupid thing to do. So I change to their solution of just setting the width. 
+*/
